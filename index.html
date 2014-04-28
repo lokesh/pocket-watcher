@@ -9,19 +9,28 @@
 
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla%7CMontserrat:700">
 	<link rel="stylesheet" href="css/screen.css">
+
+  <script src="bower_components/modernizr/modernizr.js"></script>
+
 </head>
 <body>
 	
   <pre id="response"></pre>
 
-	<button id="auth">Authorize</button>
+	<button id="authorize-button" style="visibility: hidden">Authorize</button>
 
-	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/backbone/backbone.js"></script>
+  <script src="bower_components/react/react-with-addons.js"></script>
 
+  <script src="js/app.js"></script>
+  <script src="js/models.js"></script>
+  <script src="js/views.js"></script>
+  <script src="js/router.js"></script>
   <script src="js/youtube.js"></script>
+  
   <script src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
   
-  <!-- <script src="js/sprintly.js"></script> -->
-
 </body>
 </html>

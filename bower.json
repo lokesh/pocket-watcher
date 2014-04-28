@@ -1,0 +1,11 @@
+{
+  "name": "the-consumer",
+  "version": "0.0.1",
+  "dependencies": {
+    "backbone": "latest",
+    "jquery": "latest",
+    "modernizr": "latest",
+    "underscore": "latest",
+    "react": "~0.10.0"
+  }
+}

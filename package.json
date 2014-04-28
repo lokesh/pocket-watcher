@@ -10,6 +10,7 @@
     "grunt-contrib-connect": "^0.7.1",
     "grunt-ftp-deploy": "^0.1.1",
     "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-jshint": "~0.9.2"
+    "grunt-contrib-jshint": "~0.9.2",
+    "grunt-react": "~0.8.2"
   }
 }

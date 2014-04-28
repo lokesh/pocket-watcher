@@ -15,7 +15,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          protocol: 'http'
+          protocol: 'https'
         }
       }
     },
@@ -42,7 +42,19 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['js/lightbox.js']
+      files: ['js/**/*.js']
+    },
+    react: {
+      jsx: {
+        files: [
+          {
+            expand: true,
+            // cwd: 'public/js',
+            src: [ 'js/**/*.jsx' ],
+            ext: '.js'
+          }
+        ]
+      }
     },
     uglify: {
       options: {
@@ -57,16 +69,16 @@ module.exports = function(grunt) {
     },   
     watch: {
       sass: {
-        files: ['sass/*.sass'],
+        files: ['sass/**/*.sass'],
         tasks: ['compass'],
         options: {
           livereload: true,
           spawn: false
         },
       },
-      test: {
-        files: ['js/lightbox.js'],
-        tasks: ['jshint']
+      react: {
+        files: ['js/**/*.jsx'],
+        tasks: ['react']
       }
     }
   });
@@ -77,7 +89,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-ftp-deploy');
+  grunt.loadNpmTasks('grunt-react');
 
-  grunt.registerTask('default', ['compass', 'connect', 'watch']);
+  grunt.registerTask('default', ['connect', 'compass', 'react', 'watch']);
   grunt.registerTask('build', ['compass', 'jshint', 'uglify']);
 };
