@@ -1,0 +1,221 @@
+[
+ {
+  "id": "gapiRpc",
+  "result": {
+   "kind": "youtube#playlistItemListResponse",
+   "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/4Ks9hU2Nc_FxhpLkKikQSaWsAf8\"",
+   "nextPageToken": "CAUQAA",
+   "pageInfo": {
+    "totalResults": 27,
+    "resultsPerPage": 5
+   },
+   "items": [
+    {
+     "kind": "youtube#playlistItem",
+     "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/aTvSy8ACvV_lYBny2qavvoxWo-w\"",
+     "id": "WLgwB_2-obUiQRgvKxs16hAyZt--HhtWmi",
+     "snippet": {
+      "publishedAt": "2014-01-09T05:16:05.000Z",
+      "channelId": "UC-1B2neGHmNZ6xMB9midpJA",
+      "title": "Context in JavaScript - 1/4 - Purpose and Problems with JavaScript's \"This\"",
+      "description": "Part 1/4- In this short tutorial series, Adam Breindel talks about context or the \"this\" keyword in JavaScript. He shows us where \"this\" came from, why we have it, what sort of problems can come up and how we can solve these issues. \n\nFor more training and resources, check out NewCircle: http://crcl.to/kpjh0\n--------\nPart 1 - http://youtu.be/su-SdgebJCE\nPart 2 - http://youtu.be/hJ_YD4Ljbqc\nPart 3 - http://youtu.be/PNqoehDEZ3E\nPart 4 - http://youtu.be/QQ4__W9nELc",
+      "thumbnails": {
+       "default": {
+        "url": "https://i1.ytimg.com/vi/su-SdgebJCE/default.jpg",
+        "width": 120,
+        "height": 90
+       },
+       "medium": {
+        "url": "https://i1.ytimg.com/vi/su-SdgebJCE/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+       },
+       "high": {
+        "url": "https://i1.ytimg.com/vi/su-SdgebJCE/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+       }
+      },
+      "channelTitle": "Lokesh Dhakar",
+      "playlistId": "WL-1B2neGHmNZ6xMB9midpJA",
+      "position": 0,
+      "resourceId": {
+       "kind": "youtube#video",
+       "videoId": "su-SdgebJCE"
+      }
+     }
+    },
+    {
+     "kind": "youtube#playlistItem",
+     "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/bTdocvsbfMk_3mSXCyRZEPDu9aw\"",
+     "id": "WLgwB_2-obUiQv-C9XI3gi3FmozB9lFd3H",
+     "snippet": {
+      "publishedAt": "2014-01-20T17:29:53.000Z",
+      "channelId": "UC-1B2neGHmNZ6xMB9midpJA",
+      "title": "David Gomez: Forget everything you know about testing, and start testing!",
+      "description": "Have you ever been in a meeting where someone says: wait a minute... what is the difference between smoke and sanity tests again? Smoke, regression, integration, functional, unit, coverage, performance... Forget about all those concepts. Focus on what you want to test, and how you want to do it, and just test it. I'll go through all these concepts, demystifying them, and help you find new meaning in them, hopefully helping you to get a new mindset towards how to test their software.",
+      "thumbnails": {
+       "default": {
+        "url": "https://i1.ytimg.com/vi/gqM01dBw7Fc/default.jpg",
+        "width": 120,
+        "height": 90
+       },
+       "medium": {
+        "url": "https://i1.ytimg.com/vi/gqM01dBw7Fc/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+       },
+       "high": {
+        "url": "https://i1.ytimg.com/vi/gqM01dBw7Fc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+       },
+       "standard": {
+        "url": "https://i1.ytimg.com/vi/gqM01dBw7Fc/sddefault.jpg",
+        "width": 640,
+        "height": 480
+       },
+       "maxres": {
+        "url": "https://i1.ytimg.com/vi/gqM01dBw7Fc/maxresdefault.jpg",
+        "width": 1280,
+        "height": 720
+       }
+      },
+      "channelTitle": "Lokesh Dhakar",
+      "playlistId": "WL-1B2neGHmNZ6xMB9midpJA",
+      "position": 1,
+      "resourceId": {
+       "kind": "youtube#video",
+       "videoId": "gqM01dBw7Fc"
+      }
+     }
+    },
+    {
+     "kind": "youtube#playlistItem",
+     "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/wyOMFhcBTTy641O-KYulXbYv-NQ\"",
+     "id": "WLgwB_2-obUiQZ2ONIl7fHV6vfVRaUKnRE",
+     "snippet": {
+      "publishedAt": "2014-04-16T03:42:59.000Z",
+      "channelId": "UC-1B2neGHmNZ6xMB9midpJA",
+      "title": "Juice it or lose it - a talk by Martin Jonasson & Petri Purho",
+      "description": "Try the game here: http://grapefrukt.com/f/games/juicy-breakout/ (ESC for menu)\nFork us on github: https://github.com/grapefrukt/juicy-breakout\n\n\"A juicy game feels alive and responds to everything you do\ntons of cascading action and response for minimal user input. \"\n\nBig thanks to Niklas Ström for making music and sound effects for us and to Stina for filming.\n\nReferences:\nhttp://www.robertpenner.com/easing/\nhttp://www.game-feel.com/\nhttp://www.gamasutra.com/view/feature/2438/how_to_prototype_a_game_in_under_7_.php\nhttp://sol.gfxile.net/interpolation/\n\nEmily Short - Make it juicy!\nhttp://emshort.wordpress.com/2008/05/24/make-it-juicy/\n\n12 Principles of Animation\nhttp://minyos.its.rmit.edu.au/aim/a_notes/anim_principles.html\n\nThe Art of Diablo 3 \nhttp://gdcvault.com/play/1015306/The-Art-of-Diablo\n\nEasing related:\nhttps://www.evernote.com/shard/s1/note/c1b7f010-4564-46d9-a8c2-083d8e014b93/closetgeekshow/interactive_linkbomb#b=17e9243e-1ea9-4c2d-a6f3-48fed720f3f6&n=c1b7f010-4564-46d9-a8c2-083d8e014b93\nhttp://blogs.msdn.com/b/shawnhar/archive/2007/05/03/transitions-part-one-the-importance-of-curves.aspx\nhttp://www.timotheegroleau.com/Flash/experiments/easing_function_generator.htm",
+      "thumbnails": {
+       "default": {
+        "url": "https://i1.ytimg.com/vi/Fy0aCDmgnxg/default.jpg",
+        "width": 120,
+        "height": 90
+       },
+       "medium": {
+        "url": "https://i1.ytimg.com/vi/Fy0aCDmgnxg/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+       },
+       "high": {
+        "url": "https://i1.ytimg.com/vi/Fy0aCDmgnxg/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+       },
+       "standard": {
+        "url": "https://i1.ytimg.com/vi/Fy0aCDmgnxg/sddefault.jpg",
+        "width": 640,
+        "height": 480
+       },
+       "maxres": {
+        "url": "https://i1.ytimg.com/vi/Fy0aCDmgnxg/maxresdefault.jpg",
+        "width": 1280,
+        "height": 720
+       }
+      },
+      "channelTitle": "Lokesh Dhakar",
+      "playlistId": "WL-1B2neGHmNZ6xMB9midpJA",
+      "position": 2,
+      "resourceId": {
+       "kind": "youtube#video",
+       "videoId": "Fy0aCDmgnxg"
+      }
+     }
+    },
+    {
+     "kind": "youtube#playlistItem",
+     "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/mmdKiwNL2MMzGfpD9iVg3EqhMTo\"",
+     "id": "WLgwB_2-obUiTprdzfAFst-_cXP8HH_rfX",
+     "snippet": {
+      "publishedAt": "2014-04-16T03:43:22.000Z",
+      "channelId": "UC-1B2neGHmNZ6xMB9midpJA",
+      "title": "Hamming, Intro to The Art of Doing Science and Engineering: Learning to Learn (March 28, 1995)",
+      "description": "Intro: The purpose of this course is to prepare you for your technical future. There is really no technical content in the course, though I will, of course, refer to a great deal of it, and hopefully it will be a good review of the fundamentals that you have learned. Do not think the technical content is the course - it is only illustrative material. Style of thinking is the center of the course. I am concerned with educating and not training you.\n\n\n\nThe Art of Doing Science and Engineering: Learning to Learn\" was the capstone course by Dr. Richard W. Hamming (1915-1998) for graduate students at the Naval Postgraduate School (NPS) in Monterey California. \n\nThis course is intended to instill a \"style of thinking\" that will enhance one's ability to function as a problem solver of complex technical issues. With respect, students sometimes called the course \"Hamming on Hamming\" because he relates many research collaborations, discoveries, inventions and achievements of his own. This collection of stories and carefully distilled insights relates how those discoveries came about. Most importantly, these presentations provide objective analysis about the thought processes and reasoning that took place as Dr. Hamming, his associates and other major thinkers, in computer science and electronics, progressed through the grand challenges of science and engineering in the twentieth century.",
+      "thumbnails": {
+       "default": {
+        "url": "https://i1.ytimg.com/vi/AD4b-52jtos/default.jpg",
+        "width": 120,
+        "height": 90
+       },
+       "medium": {
+        "url": "https://i1.ytimg.com/vi/AD4b-52jtos/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+       },
+       "high": {
+        "url": "https://i1.ytimg.com/vi/AD4b-52jtos/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+       }
+      },
+      "channelTitle": "Lokesh Dhakar",
+      "playlistId": "WL-1B2neGHmNZ6xMB9midpJA",
+      "position": 3,
+      "resourceId": {
+       "kind": "youtube#video",
+       "videoId": "AD4b-52jtos"
+      }
+     }
+    },
+    {
+     "kind": "youtube#playlistItem",
+     "etag": "\"N5Eg36Gl054SUNiWWc-Su3t5O-k/z7931t6ymNgcxuJi3fjSkq1PpJk\"",
+     "id": "WLgwB_2-obUiQdtX-2mJVMMSE8nhi_KhJR",
+     "snippet": {
+      "publishedAt": "2014-04-16T03:43:33.000Z",
+      "channelId": "UC-1B2neGHmNZ6xMB9midpJA",
+      "title": "Startup Lab workshop: How Google sets goals: OKRs",
+      "description": "Google Ventures Startup Lab | GV partner Rick Klau covers the value of setting objectives and key results (OKRs) and how this has been done at Google since 1999. Understand the key attributes of effective OKRs and how to apply them in your own organization.\n\nBlog post: http://gv.com/1322",
+      "thumbnails": {
+       "default": {
+        "url": "https://i1.ytimg.com/vi/mJB83EZtAjc/default.jpg",
+        "width": 120,
+        "height": 90
+       },
+       "medium": {
+        "url": "https://i1.ytimg.com/vi/mJB83EZtAjc/mqdefault.jpg",
+        "width": 320,
+        "height": 180
+       },
+       "high": {
+        "url": "https://i1.ytimg.com/vi/mJB83EZtAjc/hqdefault.jpg",
+        "width": 480,
+        "height": 360
+       },
+       "standard": {
+        "url": "https://i1.ytimg.com/vi/mJB83EZtAjc/sddefault.jpg",
+        "width": 640,
+        "height": 480
+       },
+       "maxres": {
+        "url": "https://i1.ytimg.com/vi/mJB83EZtAjc/maxresdefault.jpg",
+        "width": 1280,
+        "height": 720
+       }
+      },
+      "channelTitle": "Lokesh Dhakar",
+      "playlistId": "WL-1B2neGHmNZ6xMB9midpJA",
+      "position": 4,
+      "resourceId": {
+       "kind": "youtube#video",
+       "videoId": "mJB83EZtAjc"
+      }
+     }
+    }
+   ]
+  }
+ }
+]
