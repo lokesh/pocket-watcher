@@ -4,6 +4,7 @@
 .htaccess
 .ftppass
 .host_config
+js/config.js
 
 *.DS_Store
 ehthumbs.db
@@ -15,3 +16,4 @@ Rakefile
 rsync-exclude
 bower_components
 node_modules
+

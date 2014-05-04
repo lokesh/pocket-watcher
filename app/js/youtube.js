@@ -1,5 +1,3 @@
-var clientId = '967186682027-hhbgqn4l3tdi5u1arf9rsmi0ahguribj.apps.googleusercontent.com';
-var apiKey = 'AIzaSyBl5XOqJXoaKdPP6Z9eOKX7Yy5v_roEp40';
 var scopes = 'https://www.googleapis.com/auth/youtube https://www.googleapis.com/auth/youtube.readonly';
 var playlistId = 'WL-1B2neGHmNZ6xMB9midpJA';
 
@@ -8,7 +6,7 @@ function onClientLoad() {
 }
 
 function onYouTubeApiLoad() {
-  gapi.client.setApiKey(apiKey);
+  gapi.client.setApiKey(GAPI_KEY);
   window.setTimeout(checkAuth,1);
     
   // search('Lokesh');
@@ -16,7 +14,7 @@ function onYouTubeApiLoad() {
 }
 
 function checkAuth() {
-  gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+  gapi.auth.authorize({client_id: GAPI_CLIENTID, scope: scopes, immediate: true}, handleAuthResult);
 }
 
 function handleAuthResult(authResult) {
@@ -31,7 +29,7 @@ function handleAuthResult(authResult) {
 }
 
 function handleAuthClick(event) {
-  gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false}, handleAuthResult);
+  gapi.auth.authorize({client_id: GAPI_CLIENTID, scope: scopes, immediate: false}, handleAuthResult);
   return false;
 }
 
