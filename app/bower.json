@@ -1,11 +1,17 @@
 {
-  "name": "the-consumer",
-  "version": "0.0.1",
+  "name": "pocket-watcher",
+  "version": "0.0.2",
   "dependencies": {
-    "backbone": "latest",
+    "backbone-amd": "latest",
+    "backbone.wreqr": "latest",
+    "backbone.eventbinder": "latest",
+    "backbone.babysitter": "latest",
+    // "backbone.localStorage": "latest",
     "jquery": "latest",
+    "marionette": "latest",
     "modernizr": "latest",
-    "underscore": "latest",
-    "react": "~0.10.0"
+    "requirejs": "latest",
+    // "requirejs-text": "latest",
+    "underscore-amd": "latest"
   }
 }

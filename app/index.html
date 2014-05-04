@@ -1,36 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
 
-	<title>The Consumer</title>
+  <title>Pocket Watcher</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla%7CMontserrat:700">
-	<link rel="stylesheet" href="css/screen.css">
-
-  <script src="bower_components/modernizr/modernizr.js"></script>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla:400,700%7CMontserrat:700">
+  <link rel="stylesheet" href="css/screen.css">
 
 </head>
 <body>
-	
-  <pre id="response"></pre>
 
-	<button id="authorize-button" style="visibility: hidden">Authorize</button>
+  <div class="container">
 
-	<script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/underscore/underscore.js"></script>
-  <script src="bower_components/backbone/backbone.js"></script>
-  <script src="bower_components/react/react-with-addons.js"></script>
+    <section class="later-section">
+      <article class="video later-video">
+        <div class="video-details">
+          <div class="video-title">
+            Hacker Way: Designing the New Messenger
+          </div>
+          <div class="video-author">
+            by Facebook Developers
+          </div>
+          <div class="video-duration short-length">
+            3 min
+          </div>
+        </div>
+        <img class="video-image" src="https://i1.ytimg.com/vi/QErcmjPxEtg/mqdefault.jpg" />
+      </article>
 
-  <script src="js/app.js"></script>
-  <script src="js/models.js"></script>
-  <script src="js/views.js"></script>
-  <script src="js/router.js"></script>
-  <script src="js/youtube.js"></script>
-  
-  <script src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
+      <article class="video later-video">
+        <div class="video-details">
+          <div class="video-title">
+            Hamming, Intro to The Art of Doing Science and Engineering: Learning to Learn (March 28, 1995)
+          </div>
+          <div class="video-author">
+            by securitylectures
+          </div>
+          <div class="video-duration long-length">
+            57 min
+          </div>
+        </div>
+        <img class="video-image" src="https://i1.ytimg.com/vi/AD4b-52jtos/mqdefault.jpg" />
+      </article>
+
+      <article class="video later-video">
+        <div class="video-details">
+          <div class="video-title">
+            Startup Lab workshop: How Google sets goals: OKRs
+          </div>
+          <div class="video-author">
+            by Google Ventures
+          </div>
+          <div class="video-duration medium-length">
+            12 min
+          </div>
+        </div>
+        <img class="video-image" src="https://i1.ytimg.com/vi/mJB83EZtAjc/mqdefault.jpg" />
+      </article>
+    </section>
+
+  </div>
+
+  <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+
   
 </body>
 </html>

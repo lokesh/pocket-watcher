@@ -1,22 +1,20 @@
-var Router = Backbone.Router.extend({
-  routes : {
-    "foo" : "foo",
-    "bar" : "bar"
-  },
-  foo : function() {
-    React.renderComponent(
-      FooComponent(null ),
-      document.body
-    );
-  },
-  bar : function() {
-    React.renderComponent(
-      BarComponent(null ),
-      document.body
-    );
-  }
-});
- 
-app.router = new Router();
+define([
+  'marionette'
+], function (
+  Marionette
+) {
 
-Backbone.history.start();
+  return Marionette.AppRouter.extend({
+   
+    // Methods for handling routing are in controller.js
+    appRoutes: {
+      'tape/new': 'showNewTapeForm',
+      'tape/:tape': 'showTape',
+      'trending/show': 'showTrending',
+      'faves': 'showFavorites',
+      'your-tapes': 'showUserTapes',
+      '*action': 'showTrending'
+    }
+  });
+    
+});
