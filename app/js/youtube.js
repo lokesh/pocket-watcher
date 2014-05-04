@@ -55,4 +55,3 @@ function getWatchLaterPlaylist() {
   });
   request.execute(showResponse);
 }
-

@@ -1,72 +1,65 @@
 define([
-  'marionette'
-  // 'entities/favorites',
-  // 'entities/trending_tapes',
-  // 'entities/user_tapes',
-  // 'views/tape_new',
-  // 'views/tape',
-  // 'views/home'
+  'marionette',
+  'entities/playlist',
+  'views/watch_later'
 ], function (
-  Marionette
-  // Favorites,
-  // TrendingTapes,
-  // UserTapes,
-  // TapeNewView,
-  // TapeView,
-  // HomeView
+  Marionette,
+  Playlist,
+  WatchLaterView
 ) {
  
   return Marionette.Controller.extend({
 
     initialize: function(options) {
       // this.header  = options.headerRegion;
-      // this.content = options.contentRegion;
+      this.content = options.contentRegion;
+      // this.nav     = options.navRegion;
     },
 
-    showTrending: function() {
-      console.log('showTrending');
-      var trendingTapes = new TrendingTapes();
-      var homeView      = new HomeView({
-        collection: trendingTapes
-      });
+    showSearch: function() {
+      // var trendingTapes = new TrendingTapes();
+      // var homeView      = new HomeView({
+      //   collection: trendingTapes
+      // });
 
-      this.content.show(homeView);
-      trendingTapes.fetch();
+      // this.content.show(homeView);
+      // trendingTapes.fetch();
     },
   
-    showUserTapes: function() {
-      var userTapes = new UserTapes();
-      var homeView  = new HomeView({
-        collection: userTapes
-      });
+    showSubscriptions: function() {
+      // var userTapes = new UserTapes();
+      // var homeView  = new HomeView({
+      //   collection: userTapes
+      // });
       
-      this.content.show(homeView);
-      userTapes.fetch();
+      // this.content.show(homeView);
+      // userTapes.fetch();
     },
 
-    showFavorites: function() {
-      var favorites = new Favorites();
-      var homeView  = new HomeView({
-        collection: favorites
+
+    showVideo: function(video) {
+      // var tapeView = new TapeView({
+      //   model: tape
+      // });
+
+      // this.content.show(tapeView);
+      
+      // $(window).scrollTop(0);
+    },
+
+    showWatchLater: function() {
+      var playlist       = new Playlist();
+      var watchLaterView = new WatchLaterView({
+        collection: playlist
       });
       
-      this.content.show(homeView);
-      favorites.fetch();
+      this.content.show(watchLaterView);
+      playlist.fetch();
     },
 
     showNewTapeForm: function () {
-      var tapeNewView = new TapeNewView();
-      this.content.show(tapeNewView);
-    },
-
-    showTape: function(tape) {
-      var tapeView = new TapeView({
-        model: tape
-      });
-
-      this.content.show(tapeView);
-      
-      $(window).scrollTop(0);
+      // var tapeNewView = new TapeNewView();
+      // this.content.show(tapeNewView);
     },
 
     isUserLoggedIn: function() {

@@ -16,59 +16,41 @@
 </head>
 <body>
 
-  <div class="container">
+  <section class="app-content"></section>
 
-    <section class="later-section">
-      <article class="video later-video">
-        <div class="video-details">
-          <div class="video-title">
-            Hacker Way: Designing the New Messenger
-          </div>
-          <div class="video-author">
-            by Facebook Developers
-          </div>
-          <div class="video-duration short-length">
-            3 min
-          </div>
+  <script id="nav" type="text/template">
+      <a href="#" data-name="trending" class="nav-link off">Search</a>
+      <a href="#" data-name="subscriptions" class="nav-link off">Subscriptions</a>
+      <a href="#" data-name="watch-later" class="nav-link off">Watch Later</a>      
+  </script>
+
+  <script id="watch-later" type="text/template">
+    <nav class="nav watch-later-nav"></nav>
+    <section class="content watch-later-content"></section>
+  </script>
+
+  <script id="videos" type="text/template">
+    <section class="videos"></section>
+  </script>
+
+  <script id="video" type="text/template">
+    <article class="video later-video">
+      <div class="video-details">
+        <div class="video-title">
+          <%= snippet.title %>
         </div>
-        <img class="video-image" src="https://i1.ytimg.com/vi/QErcmjPxEtg/mqdefault.jpg" />
-      </article>
-
-      <article class="video later-video">
-        <div class="video-details">
-          <div class="video-title">
-            Hamming, Intro to The Art of Doing Science and Engineering: Learning to Learn (March 28, 1995)
-          </div>
-          <div class="video-author">
-            by securitylectures
-          </div>
-          <div class="video-duration long-length">
-            57 min
-          </div>
+        <div class="video-author">
+          by <%= snippet.channelTitle %>
         </div>
-        <img class="video-image" src="https://i1.ytimg.com/vi/AD4b-52jtos/mqdefault.jpg" />
-      </article>
-
-      <article class="video later-video">
-        <div class="video-details">
-          <div class="video-title">
-            Startup Lab workshop: How Google sets goals: OKRs
-          </div>
-          <div class="video-author">
-            by Google Ventures
-          </div>
-          <div class="video-duration medium-length">
-            12 min
-          </div>
+        <div class="video-duration short-length">
+          3 min
         </div>
-        <img class="video-image" src="https://i1.ytimg.com/vi/mJB83EZtAjc/mqdefault.jpg" />
-      </article>
-    </section>
-
-  </div>
+      </div>
+      <img class="video-image" src="<%= snippet.thumbnails.medium.url %>" />
+    </article>
+  </script>
 
   <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
-
   
 </body>
 </html>

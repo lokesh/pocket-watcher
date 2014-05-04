@@ -12,19 +12,21 @@ define([
  
   var app = new Marionette.Application();
 
-  // app.addRegions({
-  //   'header': '.app-header',
-  //   'content': '.app-content'
-  // });
+  app.addRegions({
+    // header: '.app-header',
+    content: '.app-content'
+    // nav: '.app-nav'
+  });
 
-  // var appController = new AppController({
-  //   headerRegion: app.header,
-  //   contentRegion: app.content
-  // });
+  var controller = new Controller({
+    // headerRegion: app.header,
+    contentRegion: app.content
+    // navRegion: app.nav
+  });
 
-  // var appRouter = new AppRouter({
-  //   controller: appController
-  // });
+  var router = new Router({
+    controller: controller
+  });
 
   // vent.on('trending:show', function() {
   //   appController.showTrending();
