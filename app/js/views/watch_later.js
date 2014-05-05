@@ -1,11 +1,13 @@
 define([
   'marionette',
   'views/nav',
-  'views/videos'
+  'views/videos',
+  'models/session'
 ], function (
   Marionette,
   NavView,
-  VideosView
+  VideosView,
+  session
   ) {
   
   return Marionette.Layout.extend({
@@ -16,6 +18,8 @@ define([
     },
 
     onRender: function() {
+      // session.set('email', 'new email');
+      // 
       var navView    = new NavView();
       var videosView = new VideosView({
         collection: this.collection

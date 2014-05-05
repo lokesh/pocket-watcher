@@ -1,6 +1,6 @@
 define([
   'marionette',
-  'entities/playlist',
+  'models/playlist',
   'views/watch_later'
 ], function (
   Marionette,

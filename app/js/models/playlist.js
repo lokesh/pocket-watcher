@@ -1,9 +1,7 @@
 define([
-  'underscore',
   'backbone',
-  'entities/video'
+  'models/video'
 ], function (
-  _,
   Backbone,
   Video
 ) {

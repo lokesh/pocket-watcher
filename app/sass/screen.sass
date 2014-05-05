@@ -18,11 +18,7 @@ $dark-gray:  #222
 
 $color:                 #666
 $bg-color:              $light-gray
-$heading-color:         $dark-gray
-$section-heading-color: $red
 $link-color:            $blue
-$code-color:            $color
-$code-bg-color:         darken($bg-color, 4%)
 $border-color:          darken($bg-color, 4%)
 
 $backdrop-bg-color:     darken($bg-color, 4%)
@@ -34,13 +30,13 @@ $footer-color:          $color
 
 $body-font-family:    "Karla", "lucida grande", sans-serif
 $heading-font-family: "Montserrat", "Helvetica", sans-serif
-$code-font-family:    "Karla", "lucida grande", sans-serif
 
 //== LAYOUT
 
 // $gutter: 30px
 // $max-column-width: 600px
 
+$nav-z-index:           100
 $video-details-z-index: 10
 
 //== UI COMPONENTS
@@ -68,7 +64,6 @@ body
   background-color: $bg-color
 
 h1, h2, h3, h4, h5
-  color: $heading-color
   line-height: 1.2em
   font-family: $heading-font-family
   font-weight: 700
@@ -100,14 +95,6 @@ p
   margin: 0 auto 2em auto
   text-align: left
 
-.lead
-  max-width: 45rem
-  margin-bottom: 1.1rem
-  font-size: 1.25rem
-
-ol
-  list-style-type: decimal
-
 ul, ol
   margin: 0 0 1.25em 0
 
@@ -117,13 +104,6 @@ li
 a
   color: $link-color
   text-decoration: none
-  &:hover
-    text-decoration: underline
-
-::-moz-selection,
-::selection
-  background: $red
-  color: white
 
 
 /* Buttons
@@ -162,15 +142,8 @@ a
     background: $link-color
 
 
-/* Elements
+/* Layout
  * ========================================================================== */
-
-hr
-  border: 0
-  border-top: 2px solid $border-color
-  margin: 1rem auto 1.5rem auto
-  width: 3rem
-/* -- Layout ------------------------------------------------------------------ */
 
 *, *:before, *:after
   +box-sizing("border-box")
@@ -185,13 +158,36 @@ body
   max-width: 40rem
 
 
-//== Content
+/* UI Components
+ * ========================================================================== */
+
+/* -- Nav -- */
+
+.nav
+  position: fixed
+  bottom: 0
+  z-index: $nav-z-index
+  width: 100%
+  background-color: $light-gray
+  border-top: 1px solid $gray
+  +pie-clearfix
+  .nav-link
+    display: block
+    float: left
+    width: 33%
+    padding: 1.5rem 0
+    color: $color
+    background-color: $light-gray
+    font-size: 1.2rem
+    text-align: center
+    &.nav-link-middle
+      width: 34%
 
 /* -- Video -- */
 
 .video
   position: relative
-  border-bottom: 3px solid $bg-color
+  border-bottom: 2px solid $bg-color
   color: white
   background-color: black
 
@@ -204,7 +200,7 @@ body
 .video-image
   display: block
   width: 100%
-  +opacity(0.35)
+  +opacity(0.3)
 
 .video-title
   margin-bottom: 0.2rem
@@ -220,7 +216,6 @@ body
   color: #aaa
   font-size: 0.9rem
   font-weight: 700
-  text-transform: uppercase
 
 .video-duration
   display: inline-block
