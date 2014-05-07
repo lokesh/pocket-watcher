@@ -16,7 +16,7 @@ define([
     onNavLinkClick: function(event) {
       event.preventDefault();
       var $target = $(event.target);
-      console.log($target);
+
       if ($target.hasClass('off')) {
         this.$el.find('.nav-link')
           .removeClass('on')

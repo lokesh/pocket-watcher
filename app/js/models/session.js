@@ -1,4 +1,5 @@
 // Session model is a singleton.
+
 define([
   'jquery',
   'backbone'
@@ -19,7 +20,7 @@ function(
       this.load();
     },
 
-    authenticated: function(){
+    isAuthenticated: function(){
       return Boolean(this.get('accessToken'));
     },
 

@@ -1,25 +1,34 @@
 define([
   'marionette',
-  'views/videos'
+  'views/videos',
+  'models/session'
 ], function (
   Marionette,
-  VideosView
+  VideosView,
+  session
 ) {
   
   return Marionette.Layout.extend({
-    template: '#subscriptions',
     regions: {
       content: '.content',
     },
 
-    onRender: function() {
-      // session.set('email', 'new email');
-      // 
-      var videosView = new VideosView({
-        collection: this.collection
-      });
+    getTemplate: function() {
+      if (session.isAuthenticated()){
+        return "#subscriptions";
+      } else {
+        return "#subscriptions-logged-out";
+      }
+    },
 
-      this.content.show(videosView);
+    onRender: function() {
+      if (session.isAuthenticated()){
+        var videosView = new VideosView({
+          collection: this.collection
+        });
+
+        this.content.show(videosView);
+      }
     }
 
   });

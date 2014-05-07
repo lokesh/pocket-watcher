@@ -9,19 +9,25 @@ define([
   ) {
   
   return Marionette.Layout.extend({
-    template: '#watch-later',
     regions: {
       content: '.content',
     },
 
-    onRender: function() {
-      // session.set('email', 'new email');
-      // 
-      var videosView = new VideosView({
-        collection: this.collection
-      });
+    getTemplate: function() {
+      if (session.isAuthenticated()){
+        return "#watch-later";
+      } else {
+        return "#watch-later-logged-out";
+      }
+    },
 
-      this.content.show(videosView);
+    onRender: function() {
+      if (session.isAuthenticated()){
+        var videosView = new VideosView({
+          collection: this.collection
+        });
+        this.content.show(videosView);
+      }
     }
 
   });
