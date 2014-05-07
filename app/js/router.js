@@ -9,9 +9,9 @@ define([
     // Methods for handling routing are in controller.js
     appRoutes: {
       'search': 'showSearch',
-      'subscriptions': 'showSubscriptions',
-      'video/:video': 'showVideo',
-      'watch-later': 'showWatchLater',
+      'subs': 'showSubscriptions',
+      'later': 'showWatchLater',
+      'video?v=:video': 'showVideo',
       '*action': 'showWatchLater'
     }
   });

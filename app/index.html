@@ -5,7 +5,7 @@
 
   <title>Pocket Watcher</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -16,16 +16,35 @@
 </head>
 <body>
 
-  <section class="app-content"></section>
+  <section class="app">
+    <nav class="nav app-nav"></nav>
+    <section class="content app-content"></section>
+  </section>
 
   <script id="nav" type="text/template">
-      <a href="#" data-name="trending" class="nav-link on">Search</a>
-      <a href="#" data-name="subscriptions" class="nav-link nav-link-middle off">Subs</a>
-      <a href="#" data-name="watch-later" class="nav-link off">Later</a>      
+    <a href="#" data-name="search" class="nav-link on">Search</a>
+    <a href="#" data-name="subscriptions" class="nav-link nav-link-middle off">Subs</a>
+    <a href="#" data-name="watch-later" class="nav-link off">Later</a>
+  </script>
+
+  <script id="home" type="text/template">
+    <section class="content search-content">
+      <input type="search" />
+    </section>
+  </script>
+
+
+  <script id="search" type="text/template">
+    <section class="content search-content">
+      <input type="search" class="search-input" />
+    </section>
+  </script>
+
+  <script id="subscriptions" type="text/template">
+    <section class="content watch-later-content"></section>
   </script>
 
   <script id="watch-later" type="text/template">
-    <nav class="nav watch-later-nav"></nav>
     <section class="content watch-later-content"></section>
   </script>
 

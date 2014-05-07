@@ -1,50 +1,40 @@
 define([
   'marionette',
   'models/playlist',
+  'views/search',
+  'views/subscriptions',  
   'views/watch_later'
 ], function (
   Marionette,
   Playlist,
+  SearchView,
+  SubscriptionsView,
   WatchLaterView
 ) {
  
   return Marionette.Controller.extend({
 
     initialize: function(options) {
-      // this.header  = options.headerRegion;
       this.content = options.contentRegion;
-      // this.nav     = options.navRegion;
+      this.nav     = options.navRegion;
     },
 
-    showSearch: function() {
-      // var trendingTapes = new TrendingTapes();
-      // var homeView      = new HomeView({
-      //   collection: trendingTapes
-      // });
-
-      // this.content.show(homeView);
-      // trendingTapes.fetch();
+    showSearch: function(query) {
+      var searchView = new SearchView({
+        query: query
+      });
+      
+      this.content.show(searchView);
     },
   
     showSubscriptions: function() {
-      // var userTapes = new UserTapes();
-      // var homeView  = new HomeView({
-      //   collection: userTapes
-      // });
+      var playlist       = new Playlist();
+      var subscriptionsView = new SubscriptionsView({
+        collection: playlist
+      });
       
-      // this.content.show(homeView);
-      // userTapes.fetch();
-    },
-
-
-    showVideo: function(video) {
-      // var tapeView = new TapeView({
-      //   model: tape
-      // });
-
-      // this.content.show(tapeView);
-      
-      // $(window).scrollTop(0);
+      this.content.show(subscriptionsView);
+      playlist.fetch();
     },
 
     showWatchLater: function() {
@@ -57,9 +47,14 @@ define([
       playlist.fetch();
     },
 
-    showNewTapeForm: function () {
-      // var tapeNewView = new TapeNewView();
-      // this.content.show(tapeNewView);
+    showVideo: function(video) {
+      // var tapeView = new TapeView({
+      //   model: tape
+      // });
+
+      // this.content.show(tapeView);
+      
+      // $(window).scrollTop(0);
     },
 
     isUserLoggedIn: function() {

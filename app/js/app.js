@@ -2,51 +2,54 @@ define([
   'marionette',
   'controller',
   'router',
-  'modules/vent'
+  'modules/vent',
+  'views/nav'
 ], function (
   Marionette,
   Controller,
   Router,
-  vent
+  vent,
+  NavView
 ) {
  
   var app = new Marionette.Application();
 
   app.addRegions({
-    // header: '.app-header',
-    content: '.app-content'
-    // nav: '.app-nav'
+    content: '.app-content',
+    nav: '.app-nav'
   });
 
   var controller = new Controller({
-    // headerRegion: app.header,
-    contentRegion: app.content
-    // navRegion: app.nav
+    contentRegion: app.content,
+    navRegion: app.nav
   });
 
   var router = new Router({
     controller: controller
   });
 
-  // vent.on('trending:show', function() {
-  //   appController.showTrending();
-  //   appRouter.navigate('trending/show');
-  // });
+  var navView = new NavView();
+  app.nav.show(navView);
+
+  vent.on('search:show', function() {
+    controller.showSearch();
+    router.navigate('search');
+  });
   
-  // vent.on('user-tapes:show', function() {
-  //   appRouter.navigate('your-tapes');
-  //   appController.showUserTapes();
-  // });
+  vent.on('subscriptions:show', function() {
+    controller.showSubscriptions();
+    router.navigate('subs');
+  });
 
-  // vent.on('favorites:show', function() {
-  //   appController.showFavorites();
-  //   appRouter.navigate('faves');
-  // });
+  vent.on('watch-later:show', function() {
+    controller.showWatchLater();
+    router.navigate('later');
+  });
 
-  // vent.on('tape:show', function(tape) {
-  //   appController.showTape(tape);
-  //   appRouter.navigate('tape/' + tape.get('name'));
-  // });
+  vent.on('video:show', function(video) {
+    // appController.showVideo(video);
+    // appRouter.navigate('video/' + tape.get('video'));
+  });
 
   // vent.on('tape:new', function() {
   //   appController.showNewTapeForm();
