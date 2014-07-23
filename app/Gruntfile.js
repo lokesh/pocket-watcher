@@ -44,18 +44,6 @@ module.exports = function(grunt) {
     jshint: {
       files: ['js/**/*.js']
     },
-    react: {
-      jsx: {
-        files: [
-          {
-            expand: true,
-            // cwd: 'public/js',
-            src: [ 'js/**/*.jsx' ],
-            ext: '.js'
-          }
-        ]
-      }
-    },
     uglify: {
       options: {
         preserveComments: 'some',
@@ -75,10 +63,6 @@ module.exports = function(grunt) {
           livereload: true,
           spawn: false
         },
-      },
-      react: {
-        files: ['js/**/*.jsx'],
-        tasks: ['react']
       }
     }
   });
@@ -89,8 +73,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-ftp-deploy');
-  grunt.loadNpmTasks('grunt-react');
 
-  grunt.registerTask('default', ['connect', 'compass', 'react', 'watch']);
+  grunt.registerTask('default', ['connect', 'compass', 'watch']);
   grunt.registerTask('build', ['compass', 'jshint', 'uglify']);
 };

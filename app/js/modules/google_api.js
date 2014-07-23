@@ -1,14 +1,12 @@
-// Session model is a singleton.
-
 define([
   'jquery',
-  'backbone'
   // 'cookie'
 ],
 function(
   $,
   Backbone
 ){
+
 
   var Session = Backbone.Model.extend({
     defaults: {
@@ -50,6 +48,11 @@ function(
       // this.accessToken = $.cookie('accessToken');
     }
   });
+
+
+  return{
+  };
+
 
   return new Session();
 
