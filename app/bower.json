@@ -2,16 +2,12 @@
   "name": "pocket-watcher",
   "version": "0.0.2",
   "dependencies": {
-    "backbone-amd": "latest",
-    "backbone.wreqr": "latest",
+    "backbone": "latest",
     "backbone.eventbinder": "latest",
-    "backbone.babysitter": "latest",
-    // "backbone.localStorage": "latest",
     "jquery": "latest",
     "marionette": "latest",
     "modernizr": "latest",
     "requirejs": "latest",
-    // "requirejs-text": "latest",
-    "underscore-amd": "latest"
+    "underscore": "latest"
   }
 }

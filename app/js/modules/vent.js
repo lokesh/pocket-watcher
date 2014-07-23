@@ -1,9 +1,11 @@
 define([
-  'backbone.wreqr'
+  'backbone',
+  'marionette'
 ], function (
-  Wreqr
+  Backbone,
+  Marionette
 ) {
-  
-  return new Wreqr.EventAggregator();
+
+  return new Backbone.Wreqr.EventAggregator();
 
 });

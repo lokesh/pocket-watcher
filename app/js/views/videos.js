@@ -6,8 +6,8 @@ define([
   VideoView
 ) {
   
-  return Backbone.Marionette.CollectionView.extend({
-     itemView: VideoView
+  return Marionette.CollectionView.extend({
+     childView: VideoView
   });
 
 });

@@ -4,7 +4,7 @@ define([
   Marionette
 ) {
   
-  return Backbone.Marionette.ItemView.extend({
+  return Marionette.ItemView.extend({
     template: '#video'
   });
 

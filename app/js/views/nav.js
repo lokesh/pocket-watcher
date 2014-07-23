@@ -6,7 +6,7 @@ define([
   vent
 ) {
   
-  return Marionette.Layout.extend({
+  return Marionette.LayoutView.extend({
     template: '#nav',
     events: {
       'click .nav-link': 'onNavLinkClick',

@@ -8,7 +8,7 @@ define([
   session
   ) {
   
-  return Marionette.Layout.extend({
+  return Marionette.LayoutView.extend({
     regions: {
       content: '.content',
     },
