@@ -1,1 +1,3 @@
 # Pocket Watcher
+
+Discontinued project. :-/
